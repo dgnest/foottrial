@@ -1,0 +1,38 @@
+.patients {
+    overflow: hidden;
+
+    .radio-container-in {
+        display: table;
+        float: right;
+        padding-bottom: 16px;
+    }
+    .radio-group {
+        padding-left: 24px;
+        display: table-cell;
+        #find-patient {
+            min-width: 200px;
+        }
+    }
+
+    .patient-data {
+        padding-top: $dimen-padding-view-s;
+        opacity: 1;
+        @include transition-property(opacity);
+        @include transition-duration(0.2s);
+
+        &.patient-data-hide {
+            opacity: 0;
+        }
+
+        .form-group {
+            padding: 2px;
+            label {
+                font-family: robotoCondensed, sans-serif;
+            }
+
+            p {
+                padding-top: 7px;
+            }
+        }
+    }
+}

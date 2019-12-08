@@ -1,0 +1,55 @@
+{% verbatim %}
+<div class="form-group">
+	<label for="input-name" class="col-sm-2 control-label">Nombre de Paciente</label>
+	<div class="col-sm-5">
+		<input type="text" class="form-control dg-input" id="input-name" name="first_name" placeholder="Ingrese nombre del paciente" value={{first_name}}>
+	</div>
+	<div class="col-sm-5 error hide"><i class="fa fa-times"></i><span>Error</span></div>
+</div>
+<div class="form-group">
+	<label for="input-dni" class="col-sm-2 control-label">Número de DNI</label>
+	<div class="col-sm-5">
+		<input type="text" class="form-control dg-input" id="input-dni" name="dni" placeholder="Ingrese DNI del paciente" value={{dni}}>
+	</div>
+	<div class="col-sm-5 error hide"><i class="fa fa-times"></i><span>Error</span></div>
+</div>
+<div class="form-group">
+	<label for="input-cofe" class="col-sm-2 control-label">Código</label>
+	<div class="col-sm-5">
+		<input type="text" class="form-control dg-input" id="input-code" name="code" placeholder="Ingrese código del paciente" value={{code}}>
+	</div>
+	<div class="col-sm-5 error hide"><i class="fa fa-times"></i><span>Error</span></div>
+</div>
+<div class="form-group">
+	<label for="input-mobile-phone" class="col-sm-2 control-label">Número Celular</label>
+	<div class="col-sm-5">
+		<input type="text" class="form-control dg-input" id="input-mobile-phone" name="cellphone" placeholder="Ingrese número celular del paciente" value={{cellphone}}>
+	</div>
+	<div class="col-sm-5 error hide"><i class="fa fa-times"></i><span>Error</span></div>
+</div>
+<div class="form-group">
+	<label for="input-hospital" class="col-sm-2 control-label">Hospital</label>
+	<div class="col-sm-5">
+		<select id="input-hospital" class="form-control dg-input" name="hospital" value="2">
+			<option value="0" {{selected hospital "0"}}>Ingrese Hospital de recomendación</option>
+			<option value="1" {{selected hospital "1"}}>Cayetano Heredia</option>
+			<option value="2" {{selected hospital "2"}}>Arzobispo Loayza</option>
+		</select>
+	</div>
+	<div class="col-sm-5 error hide"><i class="fa fa-times"></i><span>Error</span></div>
+</div>
+<div class="form-group">
+	<label for="input-doctor" class="col-sm-2 control-label">Médico</label>
+	<div class="col-sm-5">
+		<input type="text" class="form-control dg-input" id="input-doctor" disabled="disabled" value={{doctor}}>
+	</div>
+	<div class="col-sm-5 error hide"><i class="fa fa-times"></i><span>Error</span></div>
+</div>
+<div class="form-group">
+	<label for="input-birthday" class="col-sm-2 control-label">Fecha de Nac.</label>
+	<div class="col-sm-5">
+		<input type="text" class="form-control dg-input" id="input-birthday" name="birthday_converted" placeholder="dd/mm/aaaa" value={{birthday_converted}}>
+	</div>
+	<div class="col-sm-5 error hide"><i class="fa fa-times"></i><span>Error</span></div>
+</div>
+{% endverbatim %}

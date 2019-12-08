@@ -1,0 +1,40 @@
+@startuml
+
+cloud {
+  [AWS]
+}
+
+node "Ec2" {
+  [Nginx]
+  [Django]
+  [supervisord]
+}
+
+package "apps-supervisord" {
+  [celery]
+  [celery-beat]
+  [uwsgi]
+}
+
+database "RabbitMQ" {
+    [Pika]
+}
+
+queue message
+
+database "PostgreSQL" {
+    [psycopg2]
+}
+
+
+[AWS] --> [Nginx]
+[Nginx] --> [Django]
+[Django] --> [Pika]
+[Django] --> [psycopg2]
+
+[supervisord] --> [celery]
+[supervisord] --> [celery-beat]
+[supervisord] --> [uwsgi]
+/' queue '/
+[Pika] --> message
+@enduml

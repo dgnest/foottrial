@@ -1,0 +1,50 @@
+// $COLORS
+$white: #FFF;
+$blue: #1F88C2;
+$green: #6AC575;
+$orange: #f39c12;
+$red: #ea6153;
+$gray: #F2F2F2;
+$black-80: #333333;
+
+// $TEXT
+$color-text: $black-80;
+$color-text-link: $blue;
+$color-text-success: $green;
+
+// $VIEW
+$color-bg: $gray;
+
+// $SIDEBAR
+$color-sidebar-hover: rgba( $blue, .1 );
+$color-sidebar-active: rgba( $blue, .2 );
+
+// $CARD
+$color-card-bg: $white;
+
+// $HEADER
+$color-header-bg: $white;
+
+// $BUTTON
+$color-diff: -10;
+
+$color-btn-default-hover: #ebebeb;
+
+$color-btn-success: $green;
+$color-btn-success-hover: $green + $color-diff;
+
+$color-btn-primary: $blue;
+$color-btn-primary-hover: $blue + $color-diff;
+
+$color-btn-error: $red;
+$color-btn-error-hover: $red + $color-diff;
+
+$color-btn-orange: $orange;
+$color-btn-orange-hover: $orange + $color-diff;
+
+
+// $INPUT
+$color-input-border: #aab2bd;
+$color-input-border-focus: #3bafda;
+$color-input-placeholder: #e6e9ed;
+

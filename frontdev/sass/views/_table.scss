@@ -1,0 +1,108 @@
+.table-patients {
+    position: relative;
+    margin-left: 0px;
+    opacity: 1;
+
+    @include transition-property(margin-left, opacity);
+    @include transition-duration(0.2s);
+    display: table;
+    width: 100%;
+
+    &.table-patients-hide {
+        // margin-left: -150px;
+        opacity: 0;
+    }
+}
+
+.title-table {
+    font-size: $dimen-text-title;
+    font-family: robotoCondensed-bold, sans-serif;
+    .patient-content {
+        display: inline-block;
+        opacity: 0;
+        @include transition-property(opacity);
+        @include transition-duration(0.3s);
+    }
+    h1 {
+        display: inline-block;
+        z-index: 9;
+    }
+    .back {
+        color: $blue;
+        width: 0px;
+        opacity: 0;
+        @include transition-property(width, opacity);
+        @include transition-duration(0.3s);
+        font-size: $dimen-text-subtitle;
+        display: inline-block;
+        z-index: 0;
+    }
+    .separator {
+        padding: 0 4px;
+        color: #969696;
+        font-size: $dimen-text-subtitle;
+
+    }
+    .patient-id {
+        font-family: robotoCondensed, sans-serif;
+    }
+
+    &.title-patient-data,
+    &.title-patient-data-form {
+        font-family: robotoCondensed, sans-serif;
+        .back {
+            width: 22px;
+            opacity: 1;
+            cursor: pointer;
+
+        }
+    }
+
+    &.title-patient-data {
+        .patient-id-out {
+            opacity: 1;
+        }
+    }
+
+    &.title-patient-data-form {
+        .patient-edit-out {
+            opacity: 1;
+        }
+    }
+}
+
+.dg-table {
+    margin: 0px;
+
+    thead {
+        color: $blue;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-bottom-color: rgba( $blue, 0.6 );
+
+        &>tr>td {
+            padding: $dimen-padding-view-s 0px;
+        }
+        .sort {
+            cursor: pointer;
+            i {
+                padding-left: 8px;
+            }
+        }
+    }
+
+    tbody {
+        &>tr>td {
+            border: none;
+            padding: 2px;
+        }
+
+        tr {
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba($blue, 0.2);
+            }
+        }
+    }
+}

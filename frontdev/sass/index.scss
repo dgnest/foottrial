@@ -1,0 +1,28 @@
+@import 'compass';
+
+// VENDOR
+@import 'vendor/_bootflat.scss';
+@import 'vendor/_normalizer.scss';
+@import 'vendor/_sweetalert.scss';
+
+// VALUES
+@import 'values/_color.scss';
+@import 'values/_dimen.scss';
+
+// COMMON
+@import 'common/_fonts.scss';
+@import '_header.scss';
+@import 'common/_view.scss';
+@import 'common/_header.scss';
+@import 'common/_sidebar.scss';
+@import 'common/_button.scss';
+@import 'common/_modal.scss';
+
+// VIEWS
+@import 'views/_home.scss';
+@import 'views/_table.scss';
+@import 'views/_patient-form.scss';
+@import 'views/_patients.scss';
+@import 'views/_patient-form-edit.scss';
+@import 'views/_patient-deactivate.scss';
+@import 'views/_monitoring.scss';

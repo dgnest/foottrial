@@ -1,0 +1,24 @@
+.home {
+    .section-home {
+        padding: 8px 0px;
+    }
+
+    .card-home {
+        display: table;
+        float: left;
+        text-align: center;
+        padding: 20px 40px;
+        margin: $dimen-padding-view-s;
+    }
+
+    .title-card {
+        margin: 0px;
+        font-size: 16px;
+        padding-bottom: $dimen-padding-view-s;
+    }
+
+    .time-card {
+        font-family: robotoCondensed-light, sans-serif;
+        font-size: 32px;
+    }
+}

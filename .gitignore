@@ -1,0 +1,55 @@
+.env
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Development static and media files
+static
+# staticfiles
+media
+
+# gulp-compass metafile
+css
+
+# Redis
+dump.rdb
+
+# Node metadata
+node_modules
+
+# SASS metadata
+*.sass-cache
+
+# Bower directory
+bower_components
+
+# Development database
+*.sqlite3
+*.db
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Django stuff:
+*.log
+*.pot
+.vagrant
+
+Gemfile.lock
+.env
+*.orig
+.DS_Store
+dumps/
+*.dat
+*.bak
+*.dir

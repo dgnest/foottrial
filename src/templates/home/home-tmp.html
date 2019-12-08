@@ -1,0 +1,63 @@
+{% verbatim %}
+<script type="text/x-handlebars-template" id="tmp-home">
+	<section class="home">
+		<section class="section-home">
+			<h1>Duración de Llamadas</h1>
+			<section class="container-card clearfix">
+				<article class="card card-home">
+					<h3 class="title-card">Promedio Llamadas</h3>
+					<span class="time-card">{{call_average}}</span>
+				</article>
+				<article class="card card-home">
+					<h3 class="title-card">Mínima Llamada</h3>
+					<span class="time-card">{{call_min}}</span>
+				</article>
+				<article class="card card-home">
+					<h3 class="title-card">Máxima Llamada</h3>
+					<span class="time-card">{{call_max}}</span>
+				</article>
+			</section>
+		</section>
+
+		<section class="section-home">
+			<h1>SMS Totales</h1>
+			<section class="container-card clearfix">
+				<article class="card card-home">
+					<h3 class="title-card">SMS Totales</h3>
+					<span class="time-card">{{sms_total}}</span>
+				</article>
+				<article class="card card-home success">
+					<h3 class="title-card">SMS Exitosos</h3>
+					<span class="time-card">{{sms_sent}}</span>
+				</article>
+				<article class="card card-home error">
+					<h3 class="title-card">SMS No Enviados</h3>
+					<span class="time-card">{{sms_failed}}</span>
+				</article>
+			</section>
+		</section>
+
+		<section class="section-home">
+			<h1>Llamadas Totales</h1>
+			<section class="container-card clearfix">
+				<article class="card card-home">
+					<h3 class="title-card">Llamadas Totales</h3>
+					<span class="time-card">{{call_total}}</span>
+				</article>
+				<article class="card card-home success">
+					<h3 class="title-card">Llamadas Exitosas</h3>
+					<span class="time-card">{{call_sent}}</span>
+				</article>
+				<article class="card card-home error">
+					<h3 class="title-card">Llamadas No Enviadas</h3>
+					<span class="time-card">{{call_failed}}</span>
+				</article>
+			</section>
+		</section>
+
+		<section class="section-home">
+			<div id="highstock-container" style="height: 400px"></div>
+		</section>
+	</section>
+</script>
+{% endverbatim %}

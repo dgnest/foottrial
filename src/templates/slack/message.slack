@@ -1,0 +1,11 @@
+{% extends django_slack %}
+
+{% block text %}
+--------------------------------------
+id: {{ message.id }}
+resource: {{ message.resource }}
+cellphone: {{ message.cellphone }}
+message_id: {{ message.message_id }}
+message: {{ message.message }}
+--------------------------------------
+{% endblock %}

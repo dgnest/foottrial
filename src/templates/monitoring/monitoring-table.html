@@ -1,0 +1,58 @@
+{% verbatim %}
+<script type="text/x-handlebars-template" id="tmp-monitoring-table">
+	<section class="card monitoring">
+		<div class="title-table">
+			<div class="back">
+				<i class="fa fa-arrow-left back"></i>
+			</div>
+			<h1 class="title-monitoring">Monitoreo</h1>
+			<div class="patient-id-out patient-content">
+				<i class="fa fa-angle-right separator"></i>
+				<span class="patient-id"></span>
+			</div>
+		</div>
+
+		<section class="radio-container-out clearfix filter-container">
+			<div class="radio-container-in form-inline">
+				<div class="radio-group">
+					<label>Hospital:&nbsp;&nbsp;&nbsp;</label>
+					<select class="form-control dg-filter" id="filter-hospital">
+						<option value="">Todos</option>
+						<option value="hospital=1">Cayetano Heredia</option>
+						<option value="hospital=2">Arzobispo Loayza</option>
+					</select>
+				</div>
+				<div class="radio-group">
+					<label>Buscar:&nbsp;&nbsp;&nbsp;</label>
+					<input class="form-control filter-date m-filter-date" id="find-patient" placeholder="Buscar por código de paciente">
+				</div>
+			</div>
+		</section>
+
+		<div class="table-patients">
+			<section class="table-container">
+				<table class="table dg-table" id="table-container">
+					<thead class="tr-head">
+						<tr>
+							<td>CÓDIGO</td>
+							<td>NOMBRE</td>
+							<td>SMS TOTALES</td>
+							<td>SMS ENVIADOS</td>
+							<td>SMS NO ENVIADOS</td>
+							<td>LLAMADAS TOTALES</td>
+							<td>LLAMADAS CONTESTADAS</td>
+							<td>LLAMADAS NO CONTESTADAS</td>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</section>
+		</div>
+	</section>
+</script>
+{% endverbatim %}
+
+{% include "monitoring/patient.html" %}
+{% include "monitoring-id/monitoring-patient-table.html" %}
+{% include "monitoring-id/call-scheduled.html" %}

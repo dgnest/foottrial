@@ -1,0 +1,54 @@
+header {
+    background-color: $color-header-bg;
+    height: $dimen-header-height;
+    @include box-shadow( 0px 2px 5px rgba(0,0,0,0.3) );
+    padding: 0px $dimen-padding-view-l;
+
+    .logo {
+        float: left;
+    }
+
+    .profile {
+        float: right;
+        height: $dimen-header-height;
+        display: table;
+        cursor: pointer;
+        padding: 0 8px;
+
+        & > li {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        a.dropdown-toggle {
+            display: table;
+        }
+
+        .user-nav {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        i {
+            padding-left: 4px;
+        }
+
+        &:hover {
+            background-color: rgba(0,0,0,0.1);
+        }
+
+        span,
+        .profile-img {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        img {
+            // padding-top: 14px;
+            margin-left: 12px;
+            width: 32px;
+            height: 32px;
+            border-radius: 32px;
+        }
+    }
+}

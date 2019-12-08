@@ -1,0 +1,109 @@
+@import 'compass';
+@import 'common/_fonts.scss';
+@import 'vendor/_bootflat.scss';
+@import '_header.scss';
+@import 'vendor/_tooltip.scss';
+
+body {
+    background-color: #F9F9F9;
+}
+.container {
+    display: table;
+    min-height: 100vh;
+}
+.loginContainer {
+    display: table-cell;
+    vertical-align: middle;
+    .outerContent {
+        width: 80%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+}
+.imageContainer {
+    .imageForm {
+        width: 100%;
+        padding: 0px 0px 24px 0px;
+        @include respond-to(sdpi-screens) {
+            padding: 20px;
+        }
+    }
+}
+.has-feedback .form-control-feedback {
+    top: 38px;
+}
+.formContainer {
+    background-color: #edeff1;
+    padding: 24px 28px;
+    position: relative;
+    border-radius: 6px;
+    form {
+        font-family: 'robotoCondensed-light', sans-serif;
+    }
+    .tooltip {
+        display: none;
+    }
+    .has-error .tooltip {
+        display: block;
+        @include opacity(0.9);
+        @include tooltipDesign(error);
+        margin-top: 30px;
+        right: 0;
+        .tooltip-inner {
+            max-width: none;
+        }
+        .tooltip-arrow {
+            right: 0;
+            left: auto;
+            margin-right: 12px;
+        }
+    }
+    label {
+        font-size: 17pt;
+        font-weight: 500;
+    }
+    input {
+        font-family: 'Roboto Light';
+        border-color: transparent;
+        border-width: 2px;
+        @include transition-property(border, color);
+        @include transition-duration(0.25s);
+        font-size: 12pt;
+        padding: 6px 12px;
+        height: auto;
+        &:focus {
+            border-color: rgba(0, 175, 237, 0.8);
+        }
+    }
+    button {
+        $color: #00AFED;
+        width: 100%;
+        height: 47px;
+        background-color: $color;
+        color: #fff;
+        font-size: 16pt;
+        margin-top: 8px;
+        &:hover {
+            background-color: #00B7FA;
+        }
+        &:focus {
+            background-color: $color;
+        }
+        &:active {
+            @include box-shadow(rgba(0, 0, 0, 0.2) 1px 1px 5px);
+        }
+    }
+}
+.infoRegistro {
+    text-align: center;
+    font-family: 'RobotoCondensed Light';
+    h3 {
+        font-size: 14pt;
+    }
+    a {
+        text-decoration: underline;
+        &:hover {
+            @extend a;
+        }
+    }
+}

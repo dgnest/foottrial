@@ -1,0 +1,45 @@
+.sidebar {
+    width: $dimen-sidebar-width;
+    position: absolute;
+
+    &.sidebar-fixed {
+        position: fixed;
+        top: 0px;
+    }
+
+    .card {
+        padding: $dimen-padding-view-s 0px;
+    }
+
+    ul {
+        margin: 0px;
+    }
+
+    a {
+        display: table;
+        width: 100%;
+        color: $color-text;
+        padding: $dimen-padding-view-s $dimen-padding-view-l;
+        font-size: $dimen-text-normal;
+        font-family: robotoCondensed, sans-serif;
+
+        border-left-style: solid;
+        border-left-color: transparent;
+        border-left-width: 4px;
+
+        &:hover {
+            background-color: $color-sidebar-hover;
+        }
+
+        &.active {
+            background-color: $color-sidebar-active;
+            border-left-color: $blue;
+        }
+    }
+
+    .fa {
+        color: $blue;
+        font-size: $dimen-text-title;
+        padding-right: $dimen-padding-view-s;
+    }
+}

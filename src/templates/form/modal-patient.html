@@ -1,0 +1,30 @@
+{% verbatim %}
+<script type="text/x-handlebars-template" id="tmp-form-patient-modal">
+	<div class="modal fade" id="pacient-form-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h1 class="modal-title" id="myModalLabel">Verificación Ingreso de Paciente</h1>
+				</div>
+				<div class="modal-body clearfix">
+
+					<div class="form-horizontal col-md-9">
+{% endverbatim %}
+						{% include "common/data-patient.html" %}
+{% verbatim %}
+						<div class="form-group padding-top">
+							<div class="col-sm-6">
+								<button type="submit" class="btn btn-success dg-submit-modal">Confirmar Ingreso</button>
+							</div>
+							<div class="col-sm-6">
+								<button class="btn btn-orange" data-dismiss="modal">Seguir Editando</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+{% endverbatim %}

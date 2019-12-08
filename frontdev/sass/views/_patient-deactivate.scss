@@ -1,0 +1,31 @@
+#patient-deactivate-modal {
+    h1 {
+        color: $red;
+    }
+    .form-group {
+        label {
+            font-family: robotoCondensed, sans-serif;
+        }
+        .error {
+            display: none;
+        }
+        &.has-error {
+            .error {
+                display: block;
+            }
+        }
+    }
+
+    .form-group-password {
+        h1 {
+            color: $red;
+        }
+        p {
+            padding-top: $dimen-padding-view-s;
+        }
+    }
+
+    .form-group-buttons {
+        padding-top: $dimen-padding-view-s;
+    }
+}

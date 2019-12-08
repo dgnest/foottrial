@@ -1,0 +1,25 @@
+#patient-data-form-modal {
+    .form-group {
+        padding: 0px;
+        label {
+            font-family: robotoCondensed, sans-serif;
+        }
+
+        p {
+            padding-top: 7px;
+        }
+    }
+
+    .form-group-password {
+        h1 {
+            color: $orange;
+        }
+        p {
+            padding-top: $dimen-padding-view-s;
+        }
+    }
+
+    .form-group-buttons {
+        padding-top: $dimen-padding-view-s;
+    }
+}

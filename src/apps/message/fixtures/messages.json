@@ -1,0 +1,82 @@
+[
+  {
+    "model": "message.Message",
+    "pk": 1,
+    "fields": {
+      "order": 1,
+      "type_message": "R",
+      "message": "Hola %(patient)s, recuerda usar el TEMPSTAT todas los dias a la hora de levantarte para medir la temperatura de tus pies. Dr %(doctor)s",
+      "track_file": "/some/other/placeR1"
+    }
+  },
+  {
+    "model": "message.Message",
+    "pk": 2,
+    "fields": {
+      "order": 2,
+      "type_message": "R",
+      "message": "Hola %(patient)s, recuerda llamar a la enfermera al telefono %(hospital_phone)s al ver en el TEMPSTAT un signo de alarma, durante dos dias seguidos. Dr %(doctor)s",
+      "track_file": "/some/other/placeR2"
+    }
+  },
+  {
+    "model": "message.Message",
+    "pk": 3,
+    "fields": {
+      "order": 1,
+      "type_message": "M",
+      "message": "Hola %(patient)s, cuidar tus pies es importante: recuerda usar agua tibia para lavarlos y crema para humectarlos. Dr %(doctor)s",
+      "track_file": "/some/other/placeM1"
+    }
+  },
+  {
+    "model": "message.Message",
+    "pk": 4,
+    "fields": {
+      "order": 2,
+      "type_message": "M",
+      "message": "Hola %(patient)s, evita caminar sin zapatos, te puede causar lesiones y heridas en tus pies. Dr %(doctor)s",
+      "track_file": "/some/other/placeM2"
+    }
+  },
+  {
+    "model": "message.Message",
+    "pk": 5,
+    "fields": {
+      "order": 3,
+      "type_message": "M",
+      "message": "Hola %(patient)s, antes de lavar tus pies, verifica con el codo que el agua este tibia. Evita exponerlos a altas temperaturas. Dr %(doctor)s",
+      "track_file": "/some/other/placeM3"
+    }
+  },
+  {
+    "model": "message.Message",
+    "pk": 6,
+    "fields": {
+      "order": 4,
+      "type_message": "M",
+      "message": "Hola %(patient)s, evita utilizar medias apretadas o pantalones ajustados, esto dificulta la correcta circulacion de la sangre a tus piernas. Dr %(doctor)s",
+      "track_file": "/some/other/placeM4"
+    }
+  },
+  {
+    "model": "message.Message",
+    "pk": 7,
+    "fields": {
+      "order": 5,
+      "type_message": "M",
+      "message": "Hola %(patient)s, evita utilizar zapatos apretados o tacos, esto te puede causar heridas en tus pies. Dr %(doctor)s",
+      "track_file": "/some/other/placeM5"
+    }
+  },
+  {
+    "model": "message.Message",
+    "pk": 8,
+    "fields": {
+      "order": 6,
+      "type_message": "M",
+      "message": "Hola %(patient)s, evita utilizar zapatos apretados o tacos, esto te puede causar heridas en tus pies. Dr %(doctor)s",
+      "track_file": "/some/other/placeM6"
+    }
+  }
+]

@@ -1,0 +1,60 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Home|Foot Trial</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static "css/index.css" %}">
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<a href="/"><img src="{% static "img/logo-header.png" %}" alt="Foot Trial"></a>
+		</div>
+		<div class="profile">
+			<li role="presentation" class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+					<span class="user-nav">{{user.first_name}}</span>
+					<div class="profile-img user-nav"><img src="{% static "img/profile.jpg" %}" alt="Maria Lazo"></div>
+					<i class="fa fa-caret-down user-nav"></i>
+				</a>
+				<ul class="dropdown-menu dropdown-menu-right" role="menu">
+					<li><a href="{% url 'home_app:logout' %}">Cerrar Sesion</a></li>
+				</ul>
+			</li>
+
+		</div>
+	</header>
+
+	<section class="dg-container sidebar">
+		<section class="card card-no-fill">
+			<ul>
+				<li><a id="nav-home" class="nav-option" href="/"><i class="fa fa-home"></i>Home</a></li>
+				<li><a id="nav-pacient-form" class="nav-option" href="/ingresar/"><i class="fa fa-pencil"></i>Ingresar</a></li>
+				<li><a id="nav-pacients" class="nav-option" href="/pacientes/"><i class="fa fa-user-md"></i>Pacientes</a></li>
+				<li><a id="nav-monitoring" class="nav-option" href="/monitoreo/"><i class="fa fa-binoculars"></i>Monitoreo</a></li>
+			</ul>
+		</section>
+	</section>
+
+	<section class="dg-view">
+		<div class="dg-body">
+		</div>
+	</section>
+
+	<section>
+		{% include "home/home-tmp.html" %}
+		{% include "form/form-patient.html" %}
+		{% include "patients/patient-table.html" %}
+		{% include "monitoring/monitoring-table.html" %}
+	</section>
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="{% static "js/index.js?vasdasqw" %}"></script>
+</body>
+
+</html>

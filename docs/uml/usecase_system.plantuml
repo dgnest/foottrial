@@ -1,0 +1,11 @@
+@startuml
+left to right direction
+actor Admin << Human >>
+actor Foottrial << Application >>
+(to Register Patient) as (Register)
+Admin --> (Register)
+(Make Notification) --> (Register)
+(Register) <-- Foottrial
+(Make Notification) <. (Send SMS) : extends
+(Done Call) .> (Make Notification) : extends
+@enduml

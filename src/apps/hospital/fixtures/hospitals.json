@@ -1,0 +1,22 @@
+[
+  {
+    "model": "hospital.Hospital",
+    "pk": 1,
+    "fields": {
+      "name": "Hospital Cayetano Heredia",
+      "abbrev": "HCH",
+      "doctor": "Pinto",
+      "phone": "988448833"
+    }
+  },
+  {
+    "model": "hospital.Hospital",
+    "pk": 2,
+    "fields": {
+      "name": "Hospital Arzobispo Loayza",
+      "abbrev": "HAL",
+      "doctor": "Manrique",
+      "phone": "4553466"
+    }
+  }
+]

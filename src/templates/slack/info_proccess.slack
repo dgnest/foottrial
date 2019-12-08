@@ -1,0 +1,8 @@
+{% extends django_slack %}
+
+{% block text %}
+Process:
+Name: {{ proccess.name|safe }}
+State: {{ proccess.state|safe }}
+Date: {{ proccess.date|safe }}
+{% endblock %}

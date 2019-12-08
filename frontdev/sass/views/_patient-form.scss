@@ -1,0 +1,26 @@
+.form-group {
+    .error {
+        padding-top: 7px;
+        padding-left: 0px;
+        i {
+            padding-right: 8px;
+        }
+    }
+}
+
+#pacient-form-modal {
+    .modal-body {
+        padding-bottom: $dimen-padding-view-s;
+    }
+
+    .form-group {
+        padding: 0px;
+        label {
+            font-family: robotoCondensed, sans-serif;
+        }
+
+        p {
+            padding-top: 7px;
+        }
+    }
+}

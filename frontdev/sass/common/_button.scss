@@ -1,0 +1,46 @@
+.btn {
+    border: 1px solid transparent;
+    border-radius: $dimen-btn-border-radius;
+    font-family: robotoCondensed, sans-serif;
+    font-size: $dimen-text-normal;
+    padding: $dimen-btn-padding $dimen-btn-padding + 10;
+}
+
+.btn-success {
+    background-color: $color-btn-success;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:hover:active {
+        background-color: $color-btn-success-hover;
+        border-color: transparent;
+        @include box-shadow(none);
+    }
+}
+
+.btn-orange {
+    background-color: $color-btn-orange;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:hover:active {
+        background-color: $color-btn-orange-hover;
+        border-color: transparent;
+        @include box-shadow(none);
+    }
+}
+
+.btn-error {
+    background-color: $color-btn-error;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:hover:active {
+        background-color: $color-btn-error-hover;
+        border-color: transparent;
+        @include box-shadow(none);
+    }
+}

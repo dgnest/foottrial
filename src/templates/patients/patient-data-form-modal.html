@@ -1,0 +1,36 @@
+<script type="text/x-handlebars-template" id="tmp-patient-data-form-modal">
+	<div class="modal fade" id="patient-data-form-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h1 class="modal-title" id="myModalLabel">Verificación de Edición de Paciente</h1>
+				</div>
+				<div class="modal-body clearfix">
+					<div class="form-horizontal col-md-9">
+						{% include "common/data-patient.html" %}
+						<div class="form-group form-group-password">
+							<h1 class="modal-title" id="myModalLabel">Ingrese Contraseña</h1>
+							<p>Para asegurarnos de que es usted <strong>{{user.first_name}}</strong>, por favor ingrese su contraseña</p>
+						</div>
+						<div class="form-group">
+							<label for="input-password" class="col-sm-3 control-label">Contraseña</label>
+							<div class="col-sm-7">
+								<input type="password" id="input-password" class="form-control dg-input" name="password" placeholder="Ingrese contraseña">
+							</div>
+						</div>
+
+						<div class="form-group form-group-buttons">
+							<div class="col-sm-6">
+								<button type="submit" class="btn btn-success">Confirmar Ingreso</button>
+							</div>
+							<div class="col-sm-6">
+								<button class="btn btn-orange" data-dismiss="modal">Cancelar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>

@@ -1,0 +1,45 @@
+<script type="text/x-handlebars-template" id="tmp-patient-deactivate">
+	<div class="modal fade" id="patient-deactivate-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					<h1 class="modal-title" id="myModalLabel">Verificación de Edición de Paciente</h1>
+				</div>
+				<div class="modal-body clearfix">
+					<div class="form-horizontal col-md-12">
+						<div class="form-group">
+							<label class="col-sm-2 control-label">Motivo:</label>
+							<div class="col-sm-6">
+								<select class="form-control dg-input" id="input-reason" name="reason">
+									<option value="0">Ingrese motivo</option>
+									<option value="U">Desarrolló una ulcera</option>
+									<option value="E">Se retiró del estudio</option>
+									<option value="D">Falleció</option>
+								</select>
+							</div>
+							<div class="col-sm-4 error"><i class="fa fa-times"></i><span>Ingrese un motivo</span></div>
+						</div>
+						<div class="form-group form-group-password">
+							<h1 class="modal-title" id="myModalLabel">Ingrese Contraseña</h1>
+							<p>Para asegurarnos de que es usted <strong>{{user.first_name}}</strong>, por favor ingrese su contraseña</p>
+						</div>
+						<div class="form-group">
+							<label for="input-password" class="col-sm-2 control-label">Contraseña:</label>
+							<div class="col-sm-6">
+								<input type="password" id="input-password" class="form-control dg-input" name="password" placeholder="Ingrese contraseña">
+							</div>
+							<div class="col-sm-4 error"><i class="fa fa-times"></i><span>Ingrese una contraseña</span></div>
+						</div>
+
+						<div class="form-group form-group-buttons">
+							<div class="col-sm-6">
+								<button type="submit" class="btn btn-error dg-deactivate">Confirmar Quitar Seguimiento</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>

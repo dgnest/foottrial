@@ -1,0 +1,15 @@
+<script type="text/x-handlebars-template" id="tmp-patient-data">
+	<div class="form-horizontal col-md-6 patient-data patient-data-hide">
+		{% include "common/data-patient.html" %}
+
+		<div class="form-group padding-top">
+			<div class="col-sm-5">
+				<button type="submit" class="btn btn-success edit">Editar Paciente</button>
+			</div>
+			<div class="col-sm-5">
+				<button class="btn btn-error deactivate">Quitar Seguimiento</button>
+			</div>
+		</div>
+	</div>
+</script>
+{% include "patients/patient-deactivate.html" %}

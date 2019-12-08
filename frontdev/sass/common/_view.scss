@@ -1,0 +1,70 @@
+.dg-container {
+    padding: $dimen-padding-view-l;
+}
+
+.dg-body {
+    margin-left: $dimen-sidebar-width;
+    padding: $dimen-padding-view-l;
+    padding-left: 0px;
+    min-height: 320px;
+}
+
+.dg-hide {
+    display: none;
+}
+
+.dg-view {
+    margin-top: 0px;
+    opacity: 1;
+    @include transition-property(margin, opacity);
+    @include transition-duration(0.2s);
+}
+
+.card {
+    padding: $dimen-card-padding;
+    margin-bottom: $dimen-card-margin;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 1px rgba(0,0,0,0.2);
+    @include transition-property(box-shadow);
+    @include transition-duration(0.2s);
+}
+
+.dg-view-hide {
+    margin-top: 50px;
+    opacity: 0;
+}
+
+.card-no-fill {
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+h1 {
+    font-size: $dimen-text-title;
+    font-family: robotoCondensed-bold, sans-serif;
+    margin-top: 0px;
+}
+
+.form-group {
+    padding: 6px 0px;
+}
+
+.padding-top {
+    padding-top: $dimen-padding-view-m;
+}
+
+.margin-top {
+    margin-top: $dimen-padding-view-m;
+}
+
+.success {
+    color: $green;
+}
+
+.error {
+    color: $red;
+}
