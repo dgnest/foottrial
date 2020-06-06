@@ -1,7 +1,7 @@
 anyjson==0.3.3
 celery==4.0.2
 dj-database-url==0.3.0
-Django==1.8.3
+Django==1.11.29
 django-filter==0.10.0
 django-grappelli==2.6.5
 django-slack==5.8.0
